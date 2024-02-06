@@ -2,44 +2,78 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font: normal 16px Tahoma;
+}
+::placeholder {
+  color: #ccc;
+}
+body {
+  background-color: #fee9f4;
 }
 a:link {
   color: #f10005;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 a:visited {
   color: #2b00d9;
+  font-size: 14px;
 }
 
 a:hover {
   color: #f10000;
+  font-size: 14px;
 }
 
 a:active {
   color: #01c00f;
-  font-size: 19.5px;
+  font-size: 14px;
 }
-img {
-  max-width: 100%;
+form {
+  max-width: 50%;
+  margin: 25px auto 0 auto;
+}
+h1 {
+  font-size: 20px;
+  margin: 25px 0 15px 0;
+  text-shadow: 1px 1px 3px #999;
+}
+input {
+  margin: 10px 0;
+  padding: 0 5px;
+}
+fieldset {
+  padding: 0 20px;
+}
+legend {
+  padding: 0 10px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
+label {
+  text-wrap: nowrap;
+  margin-right: 15px;
+}
+fieldset + fieldset {
+  margin-top: 10px;
+}
+button {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: #aaa;
+}
+.links {
+  margin: 10px 0;
 }
 
-.wrap {
-  aspect-ratio: 16/9;
-  background: url("../images/nature.jpg") no-repeat center/cover;
+.btn {
+  text-align: center;
 }
-
-.wrap2 {
-  aspect-ratio: 16/9;
-  background: url("../images/cars.jpg") no-repeat center/cover;
-}
-
-.wrap3 {
-  aspect-ratio: 16/9;
-  background: url("../images/river.jpg") no-repeat center/cover;
+p {
+  text-align: center;
+  font-size: 14px;
 }

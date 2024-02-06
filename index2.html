@@ -3,35 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration</title>
     <link rel="stylesheet" href="css/style.css" />
+    <title>Authorization</title>
   </head>
   <body>
     <form class="" action="https://fom.in.ua/echo" method="post">
-      <h1>Sign up</h1>
+      <h1>Log in</h1>
       <fieldset>
-        <legend>Sign up to my website</legend>
-        <input
-          type="text"
-          name="username"
-          placeholder="Enter your username"
-        /><br />
+        <legend>Log in my website</legend>
         <input type="email" name="email" placeholder="Enter your email" /><br />
         <input
           type="password"
           name="password"
           placeholder="Enter your password"
         /><br />
-        <input
-          type="password"
-          name="submited password"
-          placeholder="Confirm password"
-        /><br />
+        <label>
+          <input
+            type="checkbox"
+            name="remember password"
+            value="success"
+          />Remember my password
+        </label>
+
         <div class="btn"><button type="submit">Send</button></div>
+
         <div class="links">
           <p>
-            If you already have account you can log
-            <a href="./index2.html">HERE</a>
+            If you have not account you can create new
+            <a href="./index.html">HERE</a>
           </p>
           <p>
             You can also visit this site as a guest
