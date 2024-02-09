@@ -3,9 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: black;
+}
 a:link {
   color: #f10005;
-  font-size: 20px;
 }
 
 a:visited {
@@ -18,7 +23,6 @@ a:hover {
 
 a:active {
   color: #01c00f;
-  font-size: 19.5px;
 }
 img {
   max-width: 100%;
@@ -29,17 +33,173 @@ img {
   margin: 0 auto;
 }
 
-.wrap {
+.header {
+  background-color: #f9f7e8;
+}
+
+.navigation {
+  margin-left: 79px;
+}
+
+.navigation > a {
+  float: left;
+}
+
+.navigation > a:link,
+.navigation > a:visited,
+.navigation > a:hover {
+  color: #000;
+  font: normal 16px "Lato";
+  text-decoration: none;
+}
+
+.navigation > a + a {
+  margin-left: 21px;
+}
+
+.header_inside {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 24px 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.banner {
+  max-width: 100%;
+  background-color: #d52047;
+  padding: 198px 0 172px 0;
+}
+
+.banner_text {
+  font: normal 48px Limelight;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+.body_1 {
+  padding: 95px 0 80px 0;
+  background-color: #eff8f6;
+}
+.body_1_inside {
+  display: flex;
+  flex-direction: column;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.title_in_content {
+  font: bold 32px "Lato";
+  padding-bottom: 24px;
+}
+.text_in_content {
+  font-size: 24px;
+}
+
+.body_text_and_img {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.body_text_and_img > * {
+  width: 50%;
+}
+
+.about_header {
+  margin-bottom: 40px;
+  color: #d52047;
+  font: bold 48px "Lato";
+  padding: 0;
+}
+
+.content {
+  padding: 24px;
+  background-color: #e5e5e5;
+}
+
+.about_img {
+  background: url("../images/about-image.jpg") no-repeat center/cover;
+}
+
+
+
+
+
+
+.body_2 {
+  padding: 80px 0 80px 0;
+  background-color: #fff;
+}
+
+.body_2_inside {
+  display: flex;
+  flex-direction: column;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+
+.about_header_2 {
+  margin-bottom: 40px;
+  color: #d52047;
+  font: bold 48px "Lato";
+  padding: 0;
+}
+
+
+.body_text_and_images {
+  display: flex;
+  justify-content: space-between;
+}
+.body_text_and_images > div{
+  width: 274px;
+  padding: 24px;
+  border: 2px solid #E5E5E5;
+  border-radius: 5px;
+  box-sizing: content-box;
+}
+.body_text_and_images > div > h2{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.more_about_cards:link,
+.more_about_cards:visited,
+.more_about_cards:hover {
+  color: #D52047;
+  font: normal 16px "Lato";
+}
+
+.footer > div{
+  margin-top: 24px;
+
+}
+
+
+.footer{
+  background: #F9F7E8;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.footer > div > a + a{
+  margin-left: 16px;
+}
+
+.footer > div > a{
+  cursor: pointer;
+}
+/* .body_text_and_images > * {
+  width: 33%;
+} */
+/* .banner_text {
+  
+} */
+/* .wrap {
   aspect-ratio: 16/9;
   background: url("../images/nature.jpg") no-repeat center/cover;
 }
 
-.wrap2 {
-  aspect-ratio: 16/9;
-  background: url("../images/cars.jpg") no-repeat center/cover;
-}
-
-.wrap3 {
-  aspect-ratio: 16/9;
-  background: url("../images/river.jpg") no-repeat center/cover;
-}

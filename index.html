@@ -3,63 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Нотатки</title>
+    <title>My website</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
   </head>
   <body>
-    <h1>Нотатки</h1>
-    <ul>
-      <li><b>git status</b> - переглянути стан або зміни файлів</li>
-
-      <li><b>git --version</b> - переглянути версію гіта</li>
-
-      <li>
-        <b>git log</b> - переглянути перелік всіх комітів та користувачів які
-        комітили
-      </li>
-
-      <li><b>git add .</b> - додати нові файли(зміни) для коміту</li>
-
-      <li>
-        <b>git commit -m ""</b> - закомітити файли локально(вони є тільки на
-        компі та і гіті на будуть показуватися)
-      </li>
-
-      <li>
-        <b
-          >git push origin (назва гілки або HEAD (якшо ту у якій ти
-          знаходишся))</b
-        >
-        - закомітити файли до свого гіту
-      </li>
-
-      <li>
-        <b>git push (куди відправляти) (назва гілки)</b> - закомітити файли до
-        гіту
-      </li>
-
-      <li><b>git branch </b> - переглянути у якій гілці ти знаходишся</li>
-
-      <li>
-        <b>git checkout -b (назва гілки)</b> - створити або переключитися на
-        іншу гілку
-      </li>
-
-      <li>
-        <b>git pull origin (назва гілки)</b> - отримати із свого сервера нові
-        зміни
-      </li>
-
-      <li>
-        <b>git pull (звідки брати) (назва гілки)</b> - отримати із сервера нові
-        зміни
-      </li>
-
-      <li>
-        <b>git remote -v</b> - переглянути список налаштованих віддалених сховищ
-      </li>
-    </ul>
-
-    <a href="gallery.html">Перейти до галереЇ</a>
+    <div class="header">
+      <div class="header_inside">
+        <img class="logo_1" src="./images/logo.png" alt="logo" />
+        <div class="navigation">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Features</a>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner_text">
+        Knowledge has a begining <br />
+        but no end
+      </div>
+    </div>
+    <div class="body_1">
+      <div class="body_1_inside">
+        <h2 class="about_header">About</h2>
+        <div class="body_text_and_img">
+          <div class="content">
+            <h2 class="title_in_content">Content subtitle</h2>
+            <p class="text_in_content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
+          <div class="about_img"></div>
+        </div>
+      </div>
+    </div>
+    <div class="body_2">
+      <div class="body_2_inside">
+        <h2 class="about_header_2">Features</h2>
+        <div class="body_text_and_images">
+          <div>
+            <img src="./images/card-image.jpg" alt="Castle" />
+            <h2>Card title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              ullamcorper velit tortor, in accumsan libero mollis eu. Sed vel
+              eros et dolor...
+            </p>
+            <a class="more_about_cards" href="#">Read more &gt;</a>
+          </div>
+          <div>
+            <img src="./images/card-image_(1).jpg" alt="Mountain" />
+            <h2>Card title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              ullamcorper velit tortor, in accumsan libero mollis eu. Sed vel
+              eros et dolor...
+            </p>
+            <a class="more_about_cards" href="#">Read more &gt;</a>
+          </div>
+          <div>
+            <img src="./images/card-image_(2).jpg" alt="House" />
+            <h2>Card title</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              ullamcorper velit tortor, in accumsan libero mollis eu. Sed vel
+              eros et dolor...
+            </p>
+            <a class="more_about_cards" href="#">Read more &gt;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      &copy; 2021 <u>Wisdom page</u>
+      <div>
+        <a href="#"><img src="./images/twitter.png" alt="twitter" /></a>
+        <a href="#"><img src="./images/linked-in.png" alt="linked-in" /></a>
+        <a href="#"><img src="./images/instagram.png" alt="instagram" /></a>
+      </div>
+    </div>
   </body>
 </html>
