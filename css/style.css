@@ -3,9 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
 a:link {
   color: #f10005;
-  font-size: 20px;
 }
 
 a:visited {
@@ -18,23 +24,230 @@ a:hover {
 
 a:active {
   color: #01c00f;
-  font-size: 19.5px;
-}
-img {
-  max-width: 100%;
 }
 
-.container {
-  max-width: 800px;
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 64px;
+  width: 1440px;
   margin: 0 auto;
 }
 
-.wrap {
-  aspect-ratio: 16/9;
-  background: url("../images/nature.jpg") no-repeat center/cover;
+#about {
+  flex: 0 0 auto;
+  width: 682px;
+  position: relative;
+  margin-left: 130px;
+}
+#description {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  z-index: 1;
+  width: 320px;
+}
+#title {
+  color: #000;
+  font: bold 28px "Inter";
 }
 
-.wrap2 {
+#name {
+  color: #000;
+  font: normal 28px "Inter";
+  margin-top: 40px;
+}
+
+#profession {
+  color: #3c3c43d9;
+  font: medium 28px "Inter";
+  margin-top: 10px;
+}
+
+#player {
+  float: right;
+  width: 372px;
+  height: 465px;
+  position: relative;
+}
+#player > img,
+#first_photo > img,
+#second_photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#player::after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  width: 60px;
+  height: 60px;
+  background: url(../images/play.png) center center no-repeat;
+}
+
+#slider {
+  flex: 0 0 auto;
+  width: 602px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+#first_photo,
+#second_photo {
+  width: 286px;
+  height: 357px;
+}
+
+#arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 248px;
+  height: 112px;
+  top: 301px;
+  left: 50%;
+  margin-left: -124px;
+}
+#arrows > a {
+  display: block;
+  width: 112px;
+  height: 112px;
+  flex: 0 0 auto;
+}
+#left {
+  background: url(../images/left_button.png) center center/contain no-repeat;
+}
+
+#right {
+  background: url(../images/right_button.png) center center/contain no-repeat;
+}
+
+@media (max-width: 1439px) {
+  #main {
+    padding-top: 48px;
+    width: 769px;
+  }
+  #about {
+    width: 493px;
+    margin-left: 0;
+  }
+  #description {
+    left: 24px;
+    width: 250px;
+    top: 48px;
+  }
+  #title {
+    color: #000;
+    font: bold 24px "Inter";
+  }
+
+  #name {
+    color: #000;
+    font: normal 18px "Inter";
+    margin-top: 24px;
+  }
+
+  #profession {
+    color: #3c3c43d9;
+    font: medium 12px "Inter";
+    margin-top: 6px;
+  }
+
+  #player {
+    width: 273px;
+    height: 341px;
+  }
+  #about {
+    margin-left: 24px;
+  }
+  #slider {
+    margin-right: 24px;
+    width: 208px;
+  }
+  #second_photo {
+    display: none;
+  }
+  #first_photo {
+    width: 208px;
+    height: 260px;
+  }
+  #arrows > a {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+  #arrows {
+    width: 176px;
+    margin-left: -88px;
+    top: 220px;
+  }
+}
+@media (max-width: 768px) {
+  #main {
+    padding: 32px 16px;
+    width: 343px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #about {
+    width: 343px;
+    margin: 0;
+  }
+  #description {
+    left: 23px;
+    width: 190px;
+    top: 24px;
+  }
+  #title {
+    color: #fff;
+    font: bold 18px "Inter";
+  }
+
+  #name {
+    color: #fff;
+    font: normal 14px "Inter";
+    margin-top: 16px;
+  }
+
+  #profession {
+    color: #fff;
+    font: medium 12px "Inter";
+    margin-top: 4px;
+  }
+
+  #player {
+    width: 343px;
+    height: 428px;
+    margin-bottom: 10px;
+  }
+  #slider {
+    margin-right: 0;
+    width: 343px;
+  }
+  #second_photo {
+    display: block;
+  }
+  #first_photo,
+  #second_photo {
+    width: 166px;
+    height: 208px;
+  }
+  #arrows > a {
+    display: block;
+    width: 48px;
+    height: 48px;
+  }
+  #arrows {
+    width: 104px;
+    margin-left: -52px;
+    top: 184px;
+  }
+}
+/* .wrap2 {
   aspect-ratio: 16/9;
   background: url("../images/cars.jpg") no-repeat center/cover;
 }
@@ -42,4 +255,4 @@ img {
 .wrap3 {
   aspect-ratio: 16/9;
   background: url("../images/river.jpg") no-repeat center/cover;
-}
+} */

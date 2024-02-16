@@ -3,63 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Нотатки</title>
+    <title>My website</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
   </head>
   <body>
-    <h1>Нотатки</h1>
-    <ul>
-      <li><b>git status</b> - переглянути стан або зміни файлів</li>
-
-      <li><b>git --version</b> - переглянути версію гіта</li>
-
-      <li>
-        <b>git log</b> - переглянути перелік всіх комітів та користувачів які
-        комітили
-      </li>
-
-      <li><b>git add .</b> - додати нові файли(зміни) для коміту</li>
-
-      <li>
-        <b>git commit -m ""</b> - закомітити файли локально(вони є тільки на
-        компі та і гіті на будуть показуватися)
-      </li>
-
-      <li>
-        <b
-          >git push origin (назва гілки або HEAD (якшо ту у якій ти
-          знаходишся))</b
-        >
-        - закомітити файли до свого гіту
-      </li>
-
-      <li>
-        <b>git push (куди відправляти) (назва гілки)</b> - закомітити файли до
-        гіту
-      </li>
-
-      <li><b>git branch </b> - переглянути у якій гілці ти знаходишся</li>
-
-      <li>
-        <b>git checkout -b (назва гілки)</b> - створити або переключитися на
-        іншу гілку
-      </li>
-
-      <li>
-        <b>git pull origin (назва гілки)</b> - отримати із свого сервера нові
-        зміни
-      </li>
-
-      <li>
-        <b>git pull (звідки брати) (назва гілки)</b> - отримати із сервера нові
-        зміни
-      </li>
-
-      <li>
-        <b>git remote -v</b> - переглянути список налаштованих віддалених сховищ
-      </li>
-    </ul>
-
-    <a href="gallery.html">Перейти до галереЇ</a>
+    <div id="main">
+      <div id="about">
+        <div id="description">
+          <h2 id="title">
+            “I love that it has omegas in it but they are plant-based.”
+          </h2>
+          <p id="name">Erica Chidi Cohen</p>
+          <p id="profession">Health Educator</p>
+        </div>
+        <div id="player">
+          <img src="./images/young_men.png" alt="young_men" />
+        </div>
+      </div>
+      <div id="slider">
+        <div id="first_photo">
+          <img src="./images/smile_woman.jpg" alt="smile_woman" />
+        </div>
+        <div id="second_photo">
+          <img src="./images/angry_men.jpg" alt="angry_men" />
+        </div>
+        <div id="arrows">
+          <a href="#" id="left"></a>
+          <a href="#" id="right"></a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
