@@ -3,63 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Нотатки</title>
+    <title>My website</title>
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap-5.3.3/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <h1>Нотатки</h1>
-    <ul>
-      <li><b>git status</b> - переглянути стан або зміни файлів</li>
-
-      <li><b>git --version</b> - переглянути версію гіта</li>
-
-      <li>
-        <b>git log</b> - переглянути перелік всіх комітів та користувачів які
-        комітили
-      </li>
-
-      <li><b>git add .</b> - додати нові файли(зміни) для коміту</li>
-
-      <li>
-        <b>git commit -m ""</b> - закомітити файли локально(вони є тільки на
-        компі та і гіті на будуть показуватися)
-      </li>
-
-      <li>
-        <b
-          >git push origin (назва гілки або HEAD (якшо ту у якій ти
-          знаходишся))</b
+  <body class="bg-info-subtle">
+    <div
+      class="header py-3 border border-light-subtle border border-light-subtle border-1 px-4 mx-3 my-3 rounded-1"
+    >
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="button_info py-5 px-5 my-3 mx-3 border border-light-subtle border-1 align-items-center rounded-1 d-flex justify-content-center align-items-center bg-light-subtle"
+    >
+      <div class="w-50 text-center">
+        <h2 class="fs-2 fw-bold">Lorem, ipsum.</h2>
+        <p class="fs-4 text-secondary">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel nam
+          dolores non aut magni tempore, unde possimus ullam distinctio minus,
+          iste repellat maxime mollitia.
+        </p>
+        <a class="btn btn-primary fs-4 font-monospace" href="#" role="button"
+          >Call to action</a
         >
-        - закомітити файли до свого гіту
-      </li>
+      </div>
+    </div>
+    <div
+      class="photo_info row py-5 px-5 my-3 mx-3 border border-light-subtle border-1 align-items-center rounded-1 bg-light-subtle"
+    >
+      <div class="col-12 col-xl-6 px-4 pb-4">
+        <h2 class="fs-1 fw-bold">Lorem ipsum dolor sit amet.</h2>
+        <p class="fs-5">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa,
+          voluptatibus impedit quasi aliquid alias possimus ratione ipsam
+          laborum beatae a minus veritatis omnis consequuntur quibusdam
+          suscipit. Enim voluptatum, quisquam magni ad possimus repellendus,
+          eligendi perferendis autem nulla natus doloribus temporibus?
+        </p>
+        <button class="btn btn-primary fs-4" type="submit">Primary</button>
+        <button type="button" class="btn btn-outline-secondary fs-4 ms-3">
+          Default
+        </button>
+      </div>
+      <div class="col-12 col-xl-6 px-4">
+        <img src="images/bird.jpg" alt="bird" class="w-100" />
+      </div>
+    </div>
+    <div class="social_networks row w-75 mx-auto py-5">
+      <h2 class="border-bottom mb-3 pb-2 fw-bold">Social networks</h2>
+      <div class="col-4 my-4">
+        <img
+          src="images/call-icon-2048x2048-9fglrllu.png"
+          alt="call"
+          width="100"
+        />
+        <h3 class="fw-bold">Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eaque
+          cupiditate odio nisi incidunt ipsa.
+        </p>
+        <a href="#">Tap to join &gt;</a>
+      </div>
+      <div class="col-4 my-4">
+        <img
+          src="images/Mobile-Smartphone-icon.png"
+          alt="Mobile-Smartphone"
+          width="100"
+        />
+        <h3 class="fw-bold">Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eaque
+          cupiditate odio nisi incidunt ipsa.
+        </p>
+        <a href="#">Tap to join &gt;</a>
+      </div>
+      <div class="col-4 my-4">
+        <img
+          src="images/check_one_icon_155665.png"
+          alt="check_one"
+          width="100"
+        />
+        <h3 class="fw-bold">Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eaque
+          cupiditate odio nisi incidunt ipsa.
+        </p>
+        <a href="#">Tap to join &gt;</a>
+      </div>
+      <div class="col-4 my-4">
+        <img src="images/images (1).png" alt="Smile" width="100" height="100" />
+        <h3 class="fw-bold">Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eaque
+          cupiditate odio nisi incidunt ipsa.
+        </p>
+        <a href="#">Tap to join &gt;</a>
+      </div>
+      <div class="col-4 my-4">
+        <img src="images/images.png" alt="you_wrong" width="100" />
+        <h3 class="fw-bold">Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eaque
+          cupiditate odio nisi incidunt ipsa.
+        </p>
+        <a href="#">Tap to join &gt;</a>
+      </div>
+      <div class="col-4 my-4">
+        <img src="images/leaf.png" alt="leaf" width="100" />
+        <h3 class="fw-bold">Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eaque
+          cupiditate odio nisi incidunt ipsa.
+        </p>
+        <a href="#">Tap to join &gt;</a>
+      </div>
+    </div>
+    <div class="bg-body-secondary mx-3">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+        alt="pixel"
+        height="50"
+      />
+    </div>
+    <div class="footer mx-3 d-flex justify-content-evenly py-4">
+      <p class="fs-4">
+        <a href="blog.html" class="text-secondary">Перейти до блогу</a>
+      </p>
+      <p class="fs-4">
+        <a href="contact.html" class="text-secondary">Перейти до контактів</a>
+      </p>
+    </div>
 
-      <li>
-        <b>git push (куди відправляти) (назва гілки)</b> - закомітити файли до
-        гіту
-      </li>
-
-      <li><b>git branch </b> - переглянути у якій гілці ти знаходишся</li>
-
-      <li>
-        <b>git checkout -b (назва гілки)</b> - створити або переключитися на
-        іншу гілку
-      </li>
-
-      <li>
-        <b>git pull origin (назва гілки)</b> - отримати із свого сервера нові
-        зміни
-      </li>
-
-      <li>
-        <b>git pull (звідки брати) (назва гілки)</b> - отримати із сервера нові
-        зміни
-      </li>
-
-      <li>
-        <b>git remote -v</b> - переглянути список налаштованих віддалених сховищ
-      </li>
-    </ul>
-
-    <a href="gallery.html">Перейти до галереЇ</a>
+    <script src="assets/bootstrap-5.3.3/js/bootstrap.min.js"></script>
   </body>
 </html>

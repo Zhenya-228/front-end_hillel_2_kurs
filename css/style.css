@@ -3,9 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-a:link {
+:root {
+  --bs-border-radius-sm: 1.5rem;
+}
+
+/* a:link {
   color: #f10005;
-  font-size: 20px;
 }
 
 a:visited {
@@ -18,9 +21,8 @@ a:hover {
 
 a:active {
   color: #01c00f;
-  font-size: 19.5px;
-}
-img {
+} */
+/* img {
   max-width: 100%;
 }
 
@@ -42,4 +44,4 @@ img {
 .wrap3 {
   aspect-ratio: 16/9;
   background: url("../images/river.jpg") no-repeat center/cover;
-}
+} */
