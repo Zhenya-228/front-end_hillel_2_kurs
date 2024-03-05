@@ -1,0 +1,180 @@
+head {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header_cont {
+  background-color: #eeeff1;
+  padding: 79px 0 141px 0;
+}
+.header_cont .header {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header_cont .header .nav a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26.25px;
+  color: #000000;
+  font-family: "Roboto";
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 42px;
+}
+.header_cont .header .nav a:hover {
+  color: #2115a8;
+}
+.header_cont .header .title_of_design {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 79px;
+  color: #000000;
+  font-family: "Roboto";
+  margin-top: 151px;
+}
+.header_cont .header .about_design {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.25px;
+  color: #000000;
+  font-family: "Roboto";
+  margin-top: 60px;
+}
+.header_cont .header .btn {
+  margin-top: 65px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.25px;
+  color: #fff;
+  font-family: "Roboto";
+  background-color: #34547a;
+  height: 65px;
+  min-width: 225px;
+  padding: 0 15px;
+}
+
+.about_autor {
+  max-width: 540px;
+  margin: 112px auto 100px auto;
+}
+.about_autor .title_about_autor {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 37.5px;
+  color: #000000;
+  font-family: "Roboto";
+  text-align: center;
+}
+.about_autor .text_about_autor {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.25px;
+  color: #727272;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.icons {
+  background-color: #34547a;
+  padding: 90px 0;
+}
+.icons .icons_list {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+.icons .icons_list .icon {
+  padding-left: 70px;
+  background: url(../images/project.png) left center no-repeat;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.icons .icons_list .icon h3 {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #fff;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+.icons .icons_list .icon p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #fff;
+  font-family: "Roboto";
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.video_player {
+  background-color: #eeeff1;
+  padding: 100px 0;
+}
+.video_player .video_player_inside {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.video_player .video_player_text {
+  max-width: 540px;
+  margin: 0 auto;
+}
+.video_player .title_about_video {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 37.5px;
+  color: #000000;
+  font-family: "Roboto";
+  text-align: center;
+}
+.video_player .text_about_video {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.25px;
+  color: #727272;
+  font-family: "Roboto";
+  text-align: center;
+}
+.video_player .video {
+  max-width: 1110px;
+}
+.video_player .video iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.footer {
+  background-color: #34547a;
+  padding: 50px 0;
+}
+.footer .some_text {
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 0 20px;
+}
+.footer .autor {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24.61px;
+  color: #fff;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+.footer p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21.33px;
+  color: #fff;
+  font-family: "Roboto";
+  margin: 20px 0 0 0;
+  padding: 0;
+}/*# sourceMappingURL=index.css.map */

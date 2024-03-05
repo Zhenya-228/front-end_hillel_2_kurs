@@ -3,63 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Нотатки</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
   </head>
   <body>
-    <h1>Нотатки</h1>
-    <ul>
-      <li><b>git status</b> - переглянути стан або зміни файлів</li>
-
-      <li><b>git --version</b> - переглянути версію гіта</li>
-
-      <li>
-        <b>git log</b> - переглянути перелік всіх комітів та користувачів які
-        комітили
-      </li>
-
-      <li><b>git add .</b> - додати нові файли(зміни) для коміту</li>
-
-      <li>
-        <b>git commit -m ""</b> - закомітити файли локально(вони є тільки на
-        компі та і гіті на будуть показуватися)
-      </li>
-
-      <li>
-        <b
-          >git push origin (назва гілки або HEAD (якшо ту у якій ти
-          знаходишся))</b
-        >
-        - закомітити файли до свого гіту
-      </li>
-
-      <li>
-        <b>git push (куди відправляти) (назва гілки)</b> - закомітити файли до
-        гіту
-      </li>
-
-      <li><b>git branch </b> - переглянути у якій гілці ти знаходишся</li>
-
-      <li>
-        <b>git checkout -b (назва гілки)</b> - створити або переключитися на
-        іншу гілку
-      </li>
-
-      <li>
-        <b>git pull origin (назва гілки)</b> - отримати із свого сервера нові
-        зміни
-      </li>
-
-      <li>
-        <b>git pull (звідки брати) (назва гілки)</b> - отримати із сервера нові
-        зміни
-      </li>
-
-      <li>
-        <b>git remote -v</b> - переглянути список налаштованих віддалених сховищ
-      </li>
-    </ul>
-
-    <a href="gallery.html">Перейти до галереЇ</a>
+    <div class="header_cont">
+      <div class="header">
+        <div class="nav">
+          <a href="#">Homepage</a>
+          <a href="#">About author</a>
+          <a href="#">Works</a>
+          <a href="#">Process</a>
+          <a href="#">Contacts</a>
+        </div>
+        <h2 class="title_of_design">Design and layout</h2>
+        <p class="about_design">
+          Lorem Ipsum is fish text often used in print and web design. Lorem
+          Ipsum has been the standard "fish" for Latin texts since the early
+          16th century.
+        </p>
+        <button class="btn" type="button">WRITE ME</button>
+      </div>
+    </div>
+    <div class="about_autor">
+      <h2 class="title_about_autor">About me</h2>
+      <p class="text_about_autor">
+        About meLorem Ipsum is fish text often used in print and web design.
+        Lorem Ipsum has been the standard "fish" for Latin texts since the early
+        16th century.
+      </p>
+    </div>
+    <div class="icons">
+      <div class="icons_list">
+        <div class="icon">
+          <div class="icon_text">
+            <h3>40+</h3>
+            <p>projects</p>
+          </div>
+        </div>
+        <div class="icon">
+          <div class="icon_text">
+            <h3>40+</h3>
+            <p>projects</p>
+          </div>
+        </div>
+        <div class="icon">
+          <div class="icon_text">
+            <h3>40+</h3>
+            <p>projects</p>
+          </div>
+        </div>
+        <div class="icon">
+          <div class="icon_text">
+            <h3>40+</h3>
+            <p>projects</p>
+          </div>
+        </div>
+        <div class="icon">
+          <div class="icon_text">
+            <h3>40+</h3>
+            <p>projects</p>
+          </div>
+        </div>
+        <div class="icon">
+          <div class="icon_text">
+            <h3>40+</h3>
+            <p>projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video_player">
+      <div class="video_player_inside">
+        <div class="video_player_text">
+          <h2 class="title_about_video">How do I work</h2>
+          <p class="text_about_video">
+            Lorem Ipsum is fish text often used in print and web design. Lorem
+            Ipsum has been the standard "fish" for Latin texts since the early
+            16th century.
+          </p>
+        </div>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/q4L3C92fZHQ?si=_vFK7vOqs-F-49po"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="some_text">
+        <h3 class="autor">John Smith</h3>
+        <p>&copy; 2018. All rights reserved.</p>
+      </div>
+    </div>
   </body>
 </html>

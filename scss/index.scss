@@ -1,0 +1,142 @@
+@import "variables";
+
+@mixin fonts($fs, $fw, $lh, $cl, $ff: "Roboto") {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  color: $cl;
+  font-family: $ff;
+}
+
+head {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header_cont {
+  background-color: #eeeff1;
+  padding: 79px 0 141px 0;
+
+  .header {
+    max-width: $xl;
+    margin: 0 auto;
+    padding: 0 20px;
+    .nav {
+      a {
+        @include fonts(16px, 500, 26.25px, $black);
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-right: 42px;
+        &:hover {
+          color: #2115a8;
+        }
+      }
+    }
+    .title_of_design {
+      @include fonts(48px, 500, 79px, $black);
+      margin-top: 151px;
+    }
+    .about_design {
+      @include fonts(16px, 400, 26.25px, $black);
+      margin-top: 60px;
+    }
+    .btn {
+      margin-top: 65px;
+      @include fonts(16px, 400, 26.25px, $white);
+      background-color: #34547a;
+      height: 65px;
+      min-width: 225px;
+      padding: 0 15px;
+    }
+  }
+}
+.about_autor {
+  max-width: 540px;
+  margin: 112px auto 100px auto;
+  .title_about_autor {
+    @include fonts(32px, 500, 37.5px, $black);
+    text-align: center;
+  }
+  .text_about_autor {
+    @include fonts(16px, 400, 26.25px, $secondary);
+    text-align: center;
+  }
+}
+.icons {
+  background-color: #34547a;
+  padding: 90px 0;
+  .icons_list {
+    max-width: $xl;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    .icon {
+      padding-left: 70px;
+      background: url(../images/project.png) left center no-repeat;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      h3 {
+        @include fonts(21px, 500, 21px, $white);
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        @include fonts(16px, 400, 16px, $white);
+        margin: 10px 0 0 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.video_player {
+  background-color: #eeeff1;
+  padding: 100px 0;
+  .video_player_inside {
+    max-width: $xl;
+    margin: 0 auto;
+  }
+  .video_player_text {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  .title_about_video {
+    @include fonts(32px, 500, 37.5px, $black);
+    text-align: center;
+  }
+  .text_about_video {
+    @include fonts(16px, 400, 26.25px, $secondary);
+    text-align: center;
+  }
+  .video {
+    max-width: $xl;
+    iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
+  }
+}
+
+.footer {
+  background-color: #34547a;
+  padding: 50px 0;
+  .some_text {
+    margin: 0 auto;
+    max-width: $xl;
+    padding: 0 20px;
+  }
+  .autor {
+    @include fonts(21px, 500, 24.61px, $white);
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    @include fonts(13px, 400, 21.33px, $white);
+    margin: 20px 0 0 0;
+    padding: 0;
+  }
+}
