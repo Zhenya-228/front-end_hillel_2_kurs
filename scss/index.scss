@@ -7,6 +7,17 @@
   color: $cl;
   font-family: $ff;
 }
+.middle_area {
+  max-width: $xl;
+  margin: 0 auto;
+}
+
+* {
+  font: 400 16px "Roboto";
+}
+body {
+  margin: 0;
+}
 
 head {
   margin: 0;
@@ -18,8 +29,6 @@ head {
   padding: 79px 0 141px 0;
 
   .header {
-    max-width: $xl;
-    margin: 0 auto;
     padding: 0 20px;
     .nav {
       a {
@@ -47,6 +56,7 @@ head {
       height: 65px;
       min-width: 225px;
       padding: 0 15px;
+      border: 0;
     }
   }
 }
@@ -66,19 +76,18 @@ head {
   background-color: #34547a;
   padding: 90px 0;
   .icons_list {
-    max-width: $xl;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 20px;
     .icon {
-      padding-left: 70px;
-      background: url(../images/project.png) left center no-repeat;
       height: 50px;
       display: flex;
       align-items: center;
       margin: 10px;
+      .icon_img {
+        margin-right: 20px;
+      }
       h3 {
         @include fonts(21px, 500, 21px, $white);
         margin: 0;
@@ -96,10 +105,6 @@ head {
 .video_player {
   background-color: #eeeff1;
   padding: 100px 0;
-  .video_player_inside {
-    max-width: $xl;
-    margin: 0 auto;
-  }
   .video_player_text {
     max-width: 540px;
     margin: 0 auto;
@@ -113,7 +118,6 @@ head {
     text-align: center;
   }
   .video {
-    max-width: $xl;
     iframe {
       width: 100%;
       aspect-ratio: 16/9;
@@ -125,8 +129,6 @@ head {
   background-color: #34547a;
   padding: 50px 0;
   .some_text {
-    margin: 0 auto;
-    max-width: $xl;
     padding: 0 20px;
   }
   .autor {

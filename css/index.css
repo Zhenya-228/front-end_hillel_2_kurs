@@ -1,3 +1,16 @@
+.middle_area {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+* {
+  font: 400 16px "Roboto";
+}
+
+body {
+  margin: 0;
+}
+
 head {
   margin: 0;
   padding: 0;
@@ -9,8 +22,6 @@ head {
   padding: 79px 0 141px 0;
 }
 .header_cont .header {
-  max-width: 1110px;
-  margin: 0 auto;
   padding: 0 20px;
 }
 .header_cont .header .nav a {
@@ -53,6 +64,7 @@ head {
   height: 65px;
   min-width: 225px;
   padding: 0 15px;
+  border: 0;
 }
 
 .about_autor {
@@ -81,20 +93,19 @@ head {
   padding: 90px 0;
 }
 .icons .icons_list {
-  max-width: 1110px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 20px;
 }
 .icons .icons_list .icon {
-  padding-left: 70px;
-  background: url(../images/project.png) left center no-repeat;
   height: 50px;
   display: flex;
   align-items: center;
   margin: 10px;
+}
+.icons .icons_list .icon .icon_img {
+  margin-right: 20px;
 }
 .icons .icons_list .icon h3 {
   font-size: 21px;
@@ -119,10 +130,6 @@ head {
   background-color: #eeeff1;
   padding: 100px 0;
 }
-.video_player .video_player_inside {
-  max-width: 1110px;
-  margin: 0 auto;
-}
 .video_player .video_player_text {
   max-width: 540px;
   margin: 0 auto;
@@ -143,9 +150,6 @@ head {
   font-family: "Roboto";
   text-align: center;
 }
-.video_player .video {
-  max-width: 1110px;
-}
 .video_player .video iframe {
   width: 100%;
   aspect-ratio: 16/9;
@@ -156,8 +160,6 @@ head {
   padding: 50px 0;
 }
 .footer .some_text {
-  margin: 0 auto;
-  max-width: 1110px;
   padding: 0 20px;
 }
 .footer .autor {
