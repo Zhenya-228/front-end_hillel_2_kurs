@@ -3,43 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
-a:link {
-  color: #f10005;
-  font-size: 20px;
+body {
+  background-color: #aacbd6;
+  padding: 10px;
 }
 
-a:visited {
-  color: #2b00d9;
+.nav-link {
+  border-radius: 3px;
+  border: none;
+  color: #8348d1;
+  padding: 5px 10px;
+  cursor: pointer;
+  font: 400 18px "Tahoma";
+}
+.nav-link.active {
+  background-color: #012379;
+  color: #fff;
+}
+.nav-link:not(.active):hover {
+  color: blue;
+  text-shadow: 1px 1px 1px #ccc;
 }
 
-a:hover {
-  color: #f10000;
-}
-
-a:active {
-  color: #01c00f;
-  font-size: 19.5px;
-}
-img {
-  max-width: 100%;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.wrap {
-  aspect-ratio: 16/9;
-  background: url("../images/nature.jpg") no-repeat center/cover;
-}
-
-.wrap2 {
-  aspect-ratio: 16/9;
-  background: url("../images/cars.jpg") no-repeat center/cover;
-}
-
-.wrap3 {
-  aspect-ratio: 16/9;
-  background: url("../images/river.jpg") no-repeat center/cover;
+.tab-pane {
+  color: #012379;
+  font: 400 16px "Tahoma";
+  padding: 10px;
 }
