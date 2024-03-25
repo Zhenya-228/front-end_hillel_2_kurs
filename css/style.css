@@ -3,43 +3,62 @@
   padding: 0;
   box-sizing: border-box;
 }
-a:link {
-  color: #f10005;
-  font-size: 20px;
+
+.tabs-section {
+  display: flex;
+  justify-content: flex-start;
 }
 
-a:visited {
-  color: #2b00d9;
+.nav-link {
+  border: none;
+  color: #597e34;
+  padding: 10px 20px;
+  cursor: pointer;
+  font: 400 18px "Tahoma";
+  background-color: rgb(43, 56, 64);
+  text-decoration: none;
+  flex: 0 0 auto;
+  height: 42px;
+  min-width: 135px;
 }
 
-a:hover {
-  color: #f10000;
+.nav-link.sel {
+  background-color: lightskyblue;
 }
 
-a:active {
-  color: #01c00f;
-  font-size: 19.5px;
-}
-img {
-  max-width: 100%;
+.hidden {
+  display: none !important;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
+.sub_menu {
+  position: absolute;
+  top: 42px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  min-width: 135px;
 }
 
-.wrap {
-  aspect-ratio: 16/9;
-  background: url("../images/nature.jpg") no-repeat center/cover;
+.sub_menu > a {
+  border: none;
+  color: #597e34;
+  padding: 10px 20px;
+  cursor: pointer;
+  font: 400 18px "Tahoma";
+  background-color: #aee0ff;
+  text-decoration: none;
+  flex: 0 0 auto;
 }
 
-.wrap2 {
-  aspect-ratio: 16/9;
-  background: url("../images/cars.jpg") no-repeat center/cover;
+.sub_menu > a:hover,
+.sub_menu > a.sel {
+  background-color: #9ed8fc;
 }
 
-.wrap3 {
-  aspect-ratio: 16/9;
-  background: url("../images/river.jpg") no-repeat center/cover;
+*[tg]::after {
+  content: "+";
+  float: right;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 2px;
 }

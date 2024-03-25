@@ -3,63 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Нотатки</title>
+    <title>My website</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./assets/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
   </head>
   <body>
-    <h1>Нотатки</h1>
-    <ul>
-      <li><b>git status</b> - переглянути стан або зміни файлів</li>
+    <div class="tabs-section">
+      <a href="#" class="nav-link" tg="sub_menu_1">Home</a>
+      <a href="#" class="nav-link" tg="sub_menu_2">Products</a>
+      <a href="#" class="nav-link">Contact</a>
+      <a href="#" class="nav-link">Delivery</a>
+    </div>
+    <div class="sub_menu hidden" id="sub_menu_2">
+      <a href="#">Product 1</a>
+      <a href="#" tg="sub_sub_menu_1">Product 2</a>
+      <a href="#" tg="sub_sub_menu_2">Product 3</a>
+      <a href="#">Product 4</a>
+    </div>
 
-      <li><b>git --version</b> - переглянути версію гіта</li>
+    <div class="sub_menu hidden" id="sub_menu_1">
+      <a href="#">About us</a>
+      <a href="#">Our history</a>
+      <a href="#">Our goals</a>
+    </div>
 
-      <li>
-        <b>git log</b> - переглянути перелік всіх комітів та користувачів які
-        комітили
-      </li>
-
-      <li><b>git add .</b> - додати нові файли(зміни) для коміту</li>
-
-      <li>
-        <b>git commit -m ""</b> - закомітити файли локально(вони є тільки на
-        компі та і гіті на будуть показуватися)
-      </li>
-
-      <li>
-        <b
-          >git push origin (назва гілки або HEAD (якшо ту у якій ти
-          знаходишся))</b
-        >
-        - закомітити файли до свого гіту
-      </li>
-
-      <li>
-        <b>git push (куди відправляти) (назва гілки)</b> - закомітити файли до
-        гіту
-      </li>
-
-      <li><b>git branch </b> - переглянути у якій гілці ти знаходишся</li>
-
-      <li>
-        <b>git checkout -b (назва гілки)</b> - створити або переключитися на
-        іншу гілку
-      </li>
-
-      <li>
-        <b>git pull origin (назва гілки)</b> - отримати із свого сервера нові
-        зміни
-      </li>
-
-      <li>
-        <b>git pull (звідки брати) (назва гілки)</b> - отримати із сервера нові
-        зміни
-      </li>
-
-      <li>
-        <b>git remote -v</b> - переглянути список налаштованих віддалених сховищ
-      </li>
-    </ul>
-
-    <a href="gallery.html">Перейти до галереЇ</a>
+    <div class="sub_menu hidden" id="sub_sub_menu_1">
+      <a href="#">Sub item 1</a>
+      <a href="#">Sub item 2</a>
+      <a href="#">Sub item 3</a>
+    </div>
+    <div class="sub_menu hidden" id="sub_sub_menu_2">
+      <a href="#" tg="sub_sub_sub_menu_3">Sub item 4</a>
+      <a href="#" tg="sub_sub_sub_menu_4">Sub item 5</a>
+      <a href="#">Sub item 6</a>
+    </div>
+    <div class="sub_menu hidden" id="sub_sub_sub_menu_3">
+      <a href="#">Sub item 7</a>
+      <a href="#">Sub item 8</a>
+      <a href="#">Sub item 9</a>
+    </div>
+    <div class="sub_menu hidden" id="sub_sub_sub_menu_4">
+      <a href="#">Sub item 10</a>
+      <a href="#" tg="sub_sub_sub_menu_5">Sub item 11</a>
+      <a href="#">Sub item 12</a>
+    </div>
+    <div class="sub_menu hidden" id="sub_sub_sub_menu_5">
+      <a href="#">Sub item 13 </a>
+      <a href="#">Sub item 14</a>
+      <a href="#">Sub item 15</a>
+    </div>
   </body>
 </html>
